@@ -118,7 +118,7 @@ const LandingComponent = () => {
         </div>
 
         <Image
-          className="absolute xl:top-40 lg:top-32 shadow-lg w-[30vh] border-white border hidden lg:block"
+          className="absolute xl:top-36 lg:top-32 shadow-lg w-[30vh] border-white border hidden lg:block"
           src="https://media.licdn.com/dms/image/D4D03AQHbwfiO2g0cng/profile-displayphoto-shrink_800_800/0/1689368093238?e=1706745600&v=beta&t=6UfY0kxIjJSZRTAIaz75pmgZViUXMe5mr0pqb-2Tu4k"
           onContextMenu={handleContextMenu}
           roundedCircle

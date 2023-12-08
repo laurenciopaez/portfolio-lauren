@@ -124,7 +124,7 @@ const TimelinePortfolio = () => {
               >
                 {" "}
                 Programming with Java for Android applications{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1" />{" "}
+                <BsArrowDownCircleFill className="ml-2 mt-1 hidden md:block" />{" "}
               </div>
             </motion.div>
           </TimelineContent>
@@ -151,7 +151,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1 " />
+                <BsArrowDownCircleFill className="mr-2 mt-1 hidden md:block" />
                 Android Basics{" "}
               </div>
             </motion.div>
@@ -187,7 +187,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1 " /> HTML5: Web
+                <BsArrowDownCircleFill className="mr-2 mt-1 hidden md:block" /> HTML5: Web
                 Fundamentals{" "}
               </div>
             </motion.div>
@@ -224,7 +224,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1 " />
+                <BsArrowDownCircleFill className="mr-2 mt-1 hidden md:block" />
                 Web Layout: HTML5 and CSS3{" "}
               </div>
             </motion.div>
@@ -253,7 +253,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 Javascript from scratch{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1 " />{" "}
+                <BsArrowDownCircleFill className="ml-2 mt-1 hidden md:block" />{" "}
               </div>{" "}
             </motion.div>
           </TimelineContent>
@@ -281,7 +281,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1 " />
+                <BsArrowDownCircleFill className="mr-2 mt-1 hidden md:block" />
                 Responsive Web Design{" "}
               </div>
             </motion.div>
@@ -311,7 +311,7 @@ const TimelinePortfolio = () => {
               >
                 {" "}
                 Numerical Analysis for Engineering{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1  " />
+                <BsArrowDownCircleFill className="ml-2 mt-1  hidden md:block" />
               </div>
             </motion.div>
           </TimelineContent>
@@ -347,7 +347,7 @@ const TimelinePortfolio = () => {
               >
                 {" "}
                 JavaScript Algorithms and Data Structures{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1 " />
+                <BsArrowDownCircleFill className="ml-2 mt-1 hidden md:block" />
               </div>
             </motion.div>
           </TimelineContent>
@@ -374,7 +374,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1 " />
+                <BsArrowDownCircleFill className="mr-2 mt-1 hidden md:block " />
                 CS50's Understanding Technology
               </div>
             </motion.div>
@@ -402,7 +402,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                Henry Bootcamp <BsArrowDownCircleFill className="ml-2 mt-1 " />{" "}
+                Henry Bootcamp <BsArrowDownCircleFill className="ml-2 mt-1 hidden md:block " />{" "}
               </div>
             </motion.div>
           </TimelineContent>
