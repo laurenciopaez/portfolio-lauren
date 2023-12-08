@@ -12,7 +12,7 @@ const ModalComponent = ({ index, setShowModal, showModal }) => {
       <Modal show={showModal} onHide={() => setShowModal(false)} size="lg">
         <Modal.Header closeButton>
           <Modal.Title className="text-black font-serif font-bold">
-            Detalle
+            Details
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="text-black flex flex-col items-center">

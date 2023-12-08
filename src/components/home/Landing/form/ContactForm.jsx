@@ -10,7 +10,7 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col"
+      className="flex flex-col "
       accept-charset="utf-8"
       method="post"
     >
@@ -27,7 +27,7 @@ function ContactForm() {
       <input id="email" type="email" name="email" placeholder="@.." className="m-1 p-1" />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <label htmlFor="message">Message</label>
-      <textarea id="message" name="message" placeholder="Proposal" className="m-1 p-1" />
+      <textarea id="message" name="message" placeholder="Proposal" className="m-1 p-1" style={{ resize: "none" }} />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <Button
         variant="primary"
