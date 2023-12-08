@@ -97,7 +97,7 @@ const LandingComponent = () => {
         </Navbar>
 
         <div
-          className="justify-center text-center h-screen mt-[35vh] lg:text-4xl text-2xl z-20 text-blue-600 font-medium cursor-text"
+          className="justify-center text-center lg:h-screen h-[60vh] mt-[35vh] lg:text-4xl text-2xl z-20 text-blue-600 font-medium cursor-text"
           style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}
         >
           <div className="lg:text-5xl text-3xl">Hello!</div> I'm Laurencio Paez
@@ -196,7 +196,7 @@ const LandingComponent = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-      <div className="w-1/2 m-auto flex mt-3 relative" ref={ref3}>
+      <div className="lg:w-1/2 w-full m-auto flex mt-3 relative" ref={ref3}>
         <p
           className="m-auto text-center lg:text-2xl mb-2 text-3xl"
           id="contact"
@@ -213,7 +213,7 @@ const LandingComponent = () => {
       </div>
       <Tooltip id="globito"></Tooltip>
       
-      <div className="m-auto border p-3 bg-opacity-70 bg-gray-500 shadow-lg rounded-lg lg:w-3/4 xl:w-1/2 sm:mr-1 sm:ml-1 mb-5">
+      <div className="m-auto p-3 bg-opacity-70 bg-gray-500 shadow-lg rounded-lg lg:w-3/4 xl:w-1/2 sm:mr-1 sm:ml-1 mb-5">
         <ContactForm />
       </div>
       </motion.div>

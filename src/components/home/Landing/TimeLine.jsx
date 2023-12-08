@@ -151,7 +151,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1" />
+                <BsArrowDownCircleFill className="mr-2 mt-1 " />
                 Android Basics{" "}
               </div>
             </motion.div>
@@ -181,13 +181,13 @@ const TimelinePortfolio = () => {
             >
               <div
                 name="3"
-                className="flex flex-row w-full justify-end cursor-pointer "
+                className="flex flex-row w-full justify-end cursor-pointer"
                 onClick={(event) =>
                   handleArrowClick(event.currentTarget.getAttribute("name"))
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1" /> HTML5: Web
+                <BsArrowDownCircleFill className="mr-2 mt-1 " /> HTML5: Web
                 Fundamentals{" "}
               </div>
             </motion.div>
@@ -218,13 +218,13 @@ const TimelinePortfolio = () => {
               {" "}
               <div
                 name="4"
-                className="flex flex-row w-full justify-end cursor-pointer"
+                className="flex flex-row w-full justify-end cursor-pointer "
                 onClick={(event) =>
                   handleArrowClick(event.currentTarget.getAttribute("name"))
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1" />
+                <BsArrowDownCircleFill className="mr-2 mt-1 " />
                 Web Layout: HTML5 and CSS3{" "}
               </div>
             </motion.div>
@@ -253,7 +253,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 Javascript from scratch{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1" />{" "}
+                <BsArrowDownCircleFill className="ml-2 mt-1 " />{" "}
               </div>{" "}
             </motion.div>
           </TimelineContent>
@@ -275,13 +275,13 @@ const TimelinePortfolio = () => {
               {" "}
               <div
                 name="6"
-                className="flex flex-row w-full justify-end cursor-pointer "
+                className="flex flex-row w-full justify-end cursor-pointer"
                 onClick={(event) =>
                   handleArrowClick(event.currentTarget.getAttribute("name"))
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1" />
+                <BsArrowDownCircleFill className="mr-2 mt-1 " />
                 Responsive Web Design{" "}
               </div>
             </motion.div>
@@ -311,7 +311,7 @@ const TimelinePortfolio = () => {
               >
                 {" "}
                 Numerical Analysis for Engineering{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1" />
+                <BsArrowDownCircleFill className="ml-2 mt-1  " />
               </div>
             </motion.div>
           </TimelineContent>
@@ -347,7 +347,7 @@ const TimelinePortfolio = () => {
               >
                 {" "}
                 JavaScript Algorithms and Data Structures{" "}
-                <BsArrowDownCircleFill className="ml-2 mt-1" />
+                <BsArrowDownCircleFill className="ml-2 mt-1 " />
               </div>
             </motion.div>
           </TimelineContent>
@@ -374,7 +374,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                <BsArrowDownCircleFill className="mr-2 mt-1" />
+                <BsArrowDownCircleFill className="mr-2 mt-1 " />
                 CS50's Understanding Technology
               </div>
             </motion.div>
@@ -402,7 +402,7 @@ const TimelinePortfolio = () => {
                 }
               >
                 {" "}
-                Henry Bootcamp <BsArrowDownCircleFill className="ml-2 mt-1" />{" "}
+                Henry Bootcamp <BsArrowDownCircleFill className="ml-2 mt-1 " />{" "}
               </div>
             </motion.div>
           </TimelineContent>
