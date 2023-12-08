@@ -1,37 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Laurencio Paez's Portfolio
 
-## Getting Started
+Welcome to my personal portfolio! This repository showcases my skills, projects, and a bit about who I am. Feel free to explore and learn more about my journey as a Full Stack Developer and Engineering student.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Hello! My name is Laurencio Paez, and I'm from Mar del Plata, Buenos Aires. I studied Full Stack Web Development at Henry and have been pursuing a degree in Mechanical Engineering since 2017. Recently, I started studying Computer Engineering. My engineering background has equipped me with knowledge in applied physics, metallurgy, algorithms, applied mathematics, and administration.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I consider myself a person with strength, determination, and persistence to solve problems. I've also developed essential teamwork skills, including collaboration, communication, and conflict resolution. These soft skills have been cultivated in both my education at Henry and throughout my engineering career.
 
-## Learn More
+In addition to my engineering skills, I have experience in web development using languages such as HTML, CSS, and JavaScript. I'm familiar with tools like React.js and Node.js. Currently, I'm seeking an opportunity to complete my engineering studies while contributing as a developer with logical-mathematical thinking and significant growth potential.
 
-To learn more about Next.js, take a look at the following resources:
+- [GitHub](https://github.com/laurenciopaez)
+- [Portfolio](https://portfolio-lauren.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Skills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Full Stack Web Development
+- HTML, CSS, JavaScript
+- React.js, Node.js
+- Engineering (Mechanical and Computer)
+- Problem Solving
+- Teamwork and Collaboration
 
-## Deploy on Vercel
+## Projects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Project 1](#) - 
+- [Project 2](#) - 
+- [Project 3](#) - 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# portfolio-lauren
+Feel free to explore the [Projects](#projects) section for more details on each project.
+
+## Contact
+
+I'm open to collaboration and new opportunities. Feel free to contact me via email: laurencio314@gmail.com
+
+Let's connect on [LinkedIn](https://www.linkedin.com/in/laurencio-paez-727042155/) and [GitHub](https://github.com/laurenciopaez).
+
+---
+
+Thank you for visiting my portfolio!
+
+
