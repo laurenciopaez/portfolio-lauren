@@ -21,6 +21,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import TechnologiesBox from "./subcomps/TechnologiesBox";
+import ProjectsBox from "./subcomps/ProjectsBox";
 
 const LandingComponent = () => {
   const [expanded, setExpanded] = useState(false);
@@ -51,6 +52,9 @@ const LandingComponent = () => {
   });
   const [ref3, inView3] = useInView({
     triggerOnce: true, // Activará el inView solo una vez
+  });
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
   });
 
   useEffect(() => {
@@ -173,6 +177,28 @@ const LandingComponent = () => {
         </div>
       </motion.div>
 
+      <h2
+        className="m-auto  text-center mt-5 mb-3 text-3xl lg:text-2xl"
+        id="Background"
+        ref={ref4}
+      >
+        Projects
+      </h2>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: inView4 ? 1 : 0, scale: inView4 ? 1 : 0.5 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
+        <div className="w-full mt-5 mb-5" id="Projects" ref={ref4}>
+          <ProjectsBox />
+        </div>
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: inView2 ? 1 : 0, scale: inView2 ? 1 : 0.5 }}
@@ -182,9 +208,9 @@ const LandingComponent = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-      <div className="w-full mt-5 mb-5" id="Tech" ref={ref2}>
-        <TechnologiesBox />
-      </div>
+        <div className="w-full mt-5 mb-5" id="Tech" ref={ref2}>
+          <TechnologiesBox />
+        </div>
       </motion.div>
 
       <motion.div
@@ -196,26 +222,26 @@ const LandingComponent = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-      <div className="lg:w-1/2 w-full m-auto flex mt-3 relative" ref={ref3}>
-        <p
-          className="m-auto text-center lg:text-2xl mb-2 text-3xl"
-          id="contact"
-        >
-          Contact me!
-        </p>
-        <FontAwesomeIcon
-          icon={faCircleQuestion}
-          className="absolute p-2 text-2xl cursor-pointer right-2"
-          onClick={handleQuestionClick}
-          data-tooltip-content="I'm looking for an afternoon part-time job and also open for freelance jobs"
-          data-tooltip-id="globito"
-        />
-      </div>
-      <Tooltip id="globito"></Tooltip>
-      
-      <div className="m-auto p-3 bg-opacity-70 bg-gray-500 shadow-lg rounded-lg lg:w-3/4 xl:w-1/2 sm:mr-1 sm:ml-1 mb-5">
-        <ContactForm />
-      </div>
+        <div className="lg:w-1/2 w-full m-auto flex mt-3 relative" ref={ref3}>
+          <p
+            className="m-auto text-center lg:text-2xl mb-2 text-3xl"
+            id="contact"
+          >
+            Contact me!
+          </p>
+          <FontAwesomeIcon
+            icon={faCircleQuestion}
+            className="absolute p-2 text-2xl cursor-pointer right-2"
+            onClick={handleQuestionClick}
+            data-tooltip-content="I'm looking for an afternoon part-time job and also open for freelance jobs"
+            data-tooltip-id="globito"
+          />
+        </div>
+        <Tooltip id="globito"></Tooltip>
+
+        <div className="m-auto p-3 bg-opacity-70 bg-gray-500 shadow-lg rounded-lg lg:w-3/4 xl:w-1/2 sm:mr-1 sm:ml-1 mb-5">
+          <ContactForm />
+        </div>
       </motion.div>
       <div className="w-full">
         <Footer />
