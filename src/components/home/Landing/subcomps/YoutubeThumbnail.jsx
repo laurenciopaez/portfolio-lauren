@@ -34,7 +34,7 @@ const YouTubeThumbnail = ({ videoId, title, videoUrl }) => {
         href={videoUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block transform transition-transform duration-900 hover:scale-90 w-1/3"
+        className="inline-block transform transition-transform duration-900 hover:scale-90 w-1/3 m-auto"
       >
         <Image
           src={thumbnailUrl}
