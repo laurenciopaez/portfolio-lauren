@@ -35,7 +35,7 @@ const TimelinePortfolio = () => {
                 //delay:0.1,
                 duration: 0.2,
               }}
-              className="ml-2 font-serif"
+              className="ml-2 font-serif backdrop-blur-sm rouned-xl w-3/4"
             >
               2017 - Started Mechanical Engineering
             </motion.div>
@@ -53,7 +53,7 @@ const TimelinePortfolio = () => {
                 //delay:0.1,
                 duration: 0.2,
               }}
-              className="mr-2 font-serif"
+              className="mr-2 font-serif backdrop-blur-sm rouned-xl"
             >
               Mathematical Analysis 1 & 2 - Algebra 1 & 2{" "}
             </motion.div>
@@ -78,7 +78,7 @@ const TimelinePortfolio = () => {
                 //delay:0.1,
                 duration: 0.2,
               }}
-              className="mr-2 font-serif"
+              className="mr-2 font-serif backdrop-blur-sm rouned-xl"
             >
               Mathematical Analysis 3 - Advanced Mathematics - Computing
               (Pascal) - Statistics{" "}

@@ -92,8 +92,8 @@ const LandingComponent = () => {
               <Nav className="me-auto">
                 <Nav.Link href="#Summary">Summary</Nav.Link>
                 <Nav.Link href="#Background">Background</Nav.Link>
-                <Nav.Link href="#Tech">Tech</Nav.Link>
                 <Nav.Link href="#Projects">Projects</Nav.Link>
+                <Nav.Link href="#Tech">Tech</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -156,13 +156,17 @@ const LandingComponent = () => {
           </div>
         </div>
       </motion.div>
-      <h2
-        className="m-auto  text-center mt-5 mb-3 text-3xl lg:text-2xl"
+
+      <div
+        className="m-auto  text-center mt-5 mb-3 text-3xl lg:text-2xl  font-medium w-full flex justify-center"
         id="Background"
         ref={ref}
       >
+        <h2 className=" backdrop-blur-sm rounded-xl w-1/3">
         My background
-      </h2>
+        </h2> 
+      </div>
+
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
