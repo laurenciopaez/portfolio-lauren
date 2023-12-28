@@ -203,6 +203,8 @@ const LandingComponent = () => {
         </div>
       </motion.div>
 
+      
+
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: inView2 ? 1 : 0, scale: inView2 ? 1 : 0.5 }}

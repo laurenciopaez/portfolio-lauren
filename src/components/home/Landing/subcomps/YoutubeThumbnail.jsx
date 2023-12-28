@@ -5,7 +5,7 @@ import {
 import React from "react";
 import { Image } from "react-bootstrap";
 
-const YouTubeThumbnail = ({ videoId, title, videoUrl }) => {
+const YouTubeThumbnail = ({ videoId, title, videoUrl,text1 ,text2,githubUrl }) => {
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
   return (
@@ -13,19 +13,13 @@ const YouTubeThumbnail = ({ videoId, title, videoUrl }) => {
       <div className="w-2/3 pl-2 pr-4">
         <h1 className="text-lg">{title}</h1>
         <p className="text-lg mt-3 text-justify">
-          It is a finance application that allows users to track their financial
-          expenses and incomes. With this application, users can have a detailed
-          overview of their personal finances and make informed decisions about
-          their spending and investments.
+          {text1}
         </p> <br/>
         <p className="text-lg text-justify ">
-          
-          On the FrontEnd, we used Next.js, Redux Toolkit, TailwindCSS, ChartJS,
-          and Tremor. On the BackEnd, we used Express, PostgresSQL, Sequelize,
-          Swagger, Passport, JWT, Nodemailer, MercadoPago API, and Cloudinary.
+          {text2}
         </p>
 
-        <a href="https://github.com/RodrigoSpano/pig_commander_client" target="_blank" >
+        <a href={githubUrl} target="_blank" >
               <FontAwesomeIcon icon={faGithub} className="mt-4 text-2xl" />
             </a>
       </div>
