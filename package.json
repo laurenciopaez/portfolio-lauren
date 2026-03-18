@@ -32,6 +32,9 @@
     "redux": "^4.2.1",
     "strapi-provider-upload-cloudinary": "^3.6.11"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
