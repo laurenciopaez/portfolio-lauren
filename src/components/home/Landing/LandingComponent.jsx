@@ -339,7 +339,7 @@ const LandingComponent = () => {
                 }}
               />
               <img
-                src="/images/profile.jpeg"
+                src="/profile.jpeg"
                 alt="Laurencio Paez"
                 onContextMenu={handleContextMenu}
                 style={{
