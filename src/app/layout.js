@@ -3,35 +3,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReduxProvider from "@/redux/ReduxProvider";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
-import { usePathname } from "next/navigation";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
   return (
     <html lang="en">
       <head>
-        <title>Lauren PortFolio</title>
+        <title>Laurencio Paez — Mechanical Engineer & Full Stack Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-          minBreakpoint="xxs"
-        >
+      <body
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99,102,241,0.12) 0%, transparent 60%), #0d1117",
+          minHeight: "100vh",
+        }}
+      >
+        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           <NextUIProvider>
             <ReduxProvider>
-              <div className="flex flex-row w-full">
-                {path === "/" ? null : (
-                  <div></div>
-                )}
-                <div style={{
-                backgroundImage: `url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?&dpr=1")`,
-                backgroundSize: 'cover',
-                width: 'screen',
-              }}>{children}</div>
-              </div>
+              {children}
             </ReduxProvider>
           </NextUIProvider>
         </ThemeProvider>
