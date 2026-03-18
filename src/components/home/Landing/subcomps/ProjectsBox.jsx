@@ -116,11 +116,12 @@ const ProjectsBox = () => {
     <div>
       {/* Tab selector */}
       <div
-        className="flex gap-2 mb-8 p-1 rounded-xl"
+        className="flex gap-1.5 mb-8 p-1 rounded-2xl"
         style={{
-          background: "rgba(22,27,34,0.7)",
-          border: "1px solid rgba(255,255,255,0.07)",
+          background: "rgba(13,16,24,0.80)",
+          border: "1px solid rgba(255,255,255,0.06)",
           display: "inline-flex",
+          backdropFilter: "blur(12px)",
         }}
       >
         {TABS.map((tab) => (
@@ -128,22 +129,27 @@ const ProjectsBox = () => {
             key={tab}
             onClick={() => setActiveTab(tab)}
             style={{
-              padding: "6px 20px",
-              borderRadius: "10px",
-              fontSize: "0.85rem",
-              fontWeight: 500,
+              padding: "8px 22px",
+              borderRadius: "12px",
+              fontSize: "0.84rem",
+              fontWeight: 600,
               border: "none",
               cursor: "pointer",
-              transition: "all 0.2s ease",
+              transition: "all 0.25s ease",
+              letterSpacing: "0.01em",
               background:
                 activeTab === tab
-                  ? "linear-gradient(135deg, rgba(99,102,241,0.9), rgba(6,182,212,0.8))"
+                  ? "linear-gradient(135deg, #6366f1, #4f46e5)"
                   : "transparent",
               color: activeTab === tab ? "#fff" : "var(--text-muted)",
-              boxShadow: activeTab === tab ? "0 2px 12px rgba(99,102,241,0.35)" : "none",
+              boxShadow:
+                activeTab === tab
+                  ? "0 4px 16px rgba(99,102,241,0.40)"
+                  : "none",
+              transform: activeTab === tab ? "translateY(-1px)" : "none",
             }}
           >
-            {tab}
+            {tab === "Engineering" ? "⚙️ Engineering" : "💻 Software"}
           </button>
         ))}
       </div>
@@ -179,19 +185,18 @@ const ProjectsBox = () => {
           />
 
           <WebsitePreview
-            title="Rick and Morty API Explorer"
-            url="https://rick-and-morty-api-project-phi.vercel.app/"
-            imageUrl="./images/web1.png"
-            git="https://github.com/laurenciopaez/Rick-and-Morty-M2-Bootcamp"
-            text="Character browser built on the Rick and Morty public API — search, filter by status/species/gender, responsive layout."
+            title="Seguimiento de la Tercera — Global Conflict Monitor"
+            videoSrc="/videos/ww3-web.mp4"
+            text="OSINT dashboard for real-time monitoring of geopolitical conflicts, military movements and global tension zones. NLP-powered news classification with severity scoring and country detection. Interactive world map with live military aircraft tracking (OpenSky Network), maritime traffic in conflict zones (AISStream), and thermal anomaly / artillery impact detection via NASA FIRMS satellite API. Real-time push alerts via WebSockets and a financial panel tracking geopolitical impact on stock indices, commodities (gold, oil, gas) and Forex."
+            techStack="Python · FastAPI · SQLite · asyncio · Next.js · TypeScript · Tailwind CSS · SWR · WebSockets · Leaflet · GeoJSON · feedparser · NASA FIRMS · OpenSky API · AISStream"
           />
 
-          <WebsitePreview
-            url="https://calculator-app-zeta-seven.vercel.app/"
-            title="Web Calculator"
-            git="https://github.com/laurenciopaez/CalculatorApp"
-            imageUrl="./images/web2.png"
-            text="Clean, keyboard-friendly calculator built in vanilla JavaScript with CSS Grid layout and operator chaining support."
+          <YouTubeThumbnail
+            videoId="sz1Qjro_TQo"
+            title="NumeriaGraphs — Graph Digitizer"
+            text1="Desktop application for extracting numerical data from static graph images. Load an image, calibrate the axes (manual or 4-point interactive), isolate data points via HSV color filtering, and export clean tabular results (CSV, TXT, JSON) ready for Excel, Python or Origin. Supports linear and logarithmic scales, zoom/pan navigation, IQR outlier filtering, undo history, and multi-language UI."
+            text2="Python · customtkinter · OpenCV · NumPy · Pillow · HSV color space · i18n (JSON) · Modular MVC architecture · Cryptographic license system"
+            videoUrl="https://www.youtube.com/watch?v=sz1Qjro_TQo"
           />
         </div>
       )}
